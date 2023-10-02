@@ -1,6 +1,120 @@
-h1 {
-    color:aqua;
-}
+
+
 body {
-    background-color: black;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./snowboard.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100% auto; */
+    /* background-size: contain; */
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 3% 10%;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+  }
+
+  main {
+    /* height: auto; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 450px 450px 450px 450px;
+  }
+
+  /* This is an element within and element selector */ 
+  nav > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2%;
+  }
+  /* This is an ID selector */
+  #profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 15% auto;
+    grid-column: 2/3;
+  }
+
+  h1 {
+    color:white;
+    grid-column: 2/3;
+    /* margin: 3% auto; */
+    margin-top: 100px;
+    margin-bottom: 200px;
+    /* border-bottom: 2px solid #1940A9; */
+    grid-row: 1/2;
+  }
+
+  h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-style: italic;
+    margin-top: 150px;
+    margin-left: 36%;
+
+  }
+
+  h3 {
+    color:black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 40%;
+    /* grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 3% auto; */
+    font-style: italic;
+  }
+
+  .small-text {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    color: black;
+    font-size: 10px;
+    /* margin: 3% auto; */
+    margin-top: 400px;
+
+  }
+
+  button {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    /* margin: 3% auto; */
+    margin-top: 50%;
+    width: 70%;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    background: transparent;
+    padding: 20px;
+    padding-bottom: 5%;
+    text-align: center;
+    color: black;
+    letter-spacing: 10px;
+    font-style: italic;
+    font-weight: bolder;
+  }
