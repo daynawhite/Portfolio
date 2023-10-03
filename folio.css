@@ -1,0 +1,11 @@
+.picture-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
